@@ -1,0 +1,11 @@
+---
+apiVersion: wego.weave.works/v1alpha1
+kind: Application
+metadata:
+  name: hello-world
+  namespace: wego-system
+  labels:
+    weave-gitops.weave.works/app-identifier: wego-aa10c815c5b36b945b657cf0a1bbf18e
+spec:
+  path: ./
+  url: ssh://git@github.com/jrryjcksn/hello-world.git
